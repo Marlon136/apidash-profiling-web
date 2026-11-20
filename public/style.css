@@ -33,9 +33,7 @@ em{font-style:normal;color:var(--cyan-dark);font-weight:600}
 /* ---- HERO ---- */
 .hero{background:linear-gradient(180deg,#265a8a 0%, #1f4e79 55%, #1a4269 100%);
   color:#fff;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;inset:0;pointer-events:none;
-  background-image:repeating-linear-gradient(90deg, transparent 0 24%,
-    rgba(255,255,255,.22) 24% calc(24% + 2px), transparent calc(24% + 2px) 25%);opacity:.5}
+
 .hero .wrap{position:relative;z-index:1;padding-top:52px;padding-bottom:46px}
 .hero .kicker{font-family:var(--title);font-size:13px;letter-spacing:.2em;text-transform:uppercase;
   color:rgba(255,255,255,.92);margin:0 0 16px;font-weight:600}
