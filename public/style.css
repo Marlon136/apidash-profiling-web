@@ -31,7 +31,7 @@ code{font-family:var(--mono);font-size:.82em;background:#eaf3f8;color:var(--navy
 em{font-style:normal;color:var(--cyan-dark);font-weight:600}
 
 /* ---- HERO ---- */
-.hero{background:linear-gradient(180deg,#0aa6e2 0%, #05a2df 55%, #0591c9 100%);
+.hero{background:linear-gradient(180deg,#265a8a 0%, #1f4e79 55%, #1a4269 100%);
   color:#fff;position:relative;overflow:hidden}
 .hero::after{content:"";position:absolute;inset:0;pointer-events:none;
   background-image:repeating-linear-gradient(90deg, transparent 0 24%,
@@ -51,11 +51,11 @@ em{font-style:normal;color:var(--cyan-dark);font-weight:600}
 .sprints span b{color:var(--yellow);font-weight:700}
 
 /* sticky toc */
-.toc{position:sticky;top:0;z-index:20;background:var(--navy);border-bottom:3px solid var(--yellow)}
+.toc{position:sticky;top:0;z-index:20;background:var(--cyan);border-bottom:3px solid var(--yellow)}
 .toc .wrap{display:flex;gap:2px;flex-wrap:wrap;padding-top:0;padding-bottom:0}
 .toc a{font-family:var(--title);font-size:13.5px;font-weight:600;letter-spacing:.03em;
-  color:rgba(255,255,255,.82);padding:14px 18px;border:0}
-.toc a:hover{color:#fff;background:var(--navy-2);text-decoration:none}
+  color:rgba(255,255,255,.92);padding:14px 18px;border:0}
+.toc a:hover{color:#fff;background:var(--cyan-dark);text-decoration:none}
 
 main{padding:0 0 70px}
 
