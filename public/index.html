@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>API Dash — Performance Profiling (App Report 4)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">ISIS-3510 · Mobile App Development · Team 36 (Dart)</p>
+    <h1>Performance Profiling of API Dash</h1>
+    <p class="sub">App Report 4 — profiling scenarios, GPU rendering, overdraw, memory and threading, measured on a real profile build.</p>
+    <p class="meta">
+      Repository <a href="https://github.com/foss42/apidash">github.com/foss42/apidash</a> ·
+      branch <code>main</code> · commit <code>c2223a2</code> ·
+      Flutter profile build · Impeller renderer · Pixel 6a emulator
+    </p>
+  </div>
+</header>
+
+<nav class="toc"><div class="wrap">
+  <a href="#scenarios">Scenarios</a>
+  <a href="#gpu">GPU rendering</a>
+  <a href="#overdraw">Overdraw</a>
+  <a href="#memory">Memory</a>
+  <a href="#threading">Threading</a>
+  <a href="#summary">Summary</a>
+</div></nav>
+
+<main class="wrap">
+
+  <section id="intro">
+    <p class="lede">This page shows the profiling data we collected for API Dash, with the charts made
+    interactive so the data can be inspected directly. Every number comes from the app running in
+    <em>profile</em> mode; it is the same data used in the written report, presented here so the
+    reasoning behind each conclusion can be checked. Hover a chart to read exact values, drag to zoom,
+    double-click to reset.</p>
+  </section>
+
+  <!-- SCENARIOS -->
+  <section id="scenarios">
+    <h2><span class="num">1</span> Profiling scenarios</h2>
+    <p>A scenario is a sequence of actions a user can do. We defined six and ran each one in DevTools.</p>
+    <table class="data">
+      <thead><tr><th>#</th><th>Scenario</th><th>What the user does</th><th>What we look at</th></tr></thead>
+      <tbody>
+        <tr><td>S1</td><td>Cold start</td><td>Open the app from scratch</td><td>First frame, Hive boxes, initial RAM</td></tr>
+        <tr><td>S2</td><td>Small GET</td><td>GET to httpbin.org/get</td><td>Sending animation, small JSON render</td></tr>
+        <tr><td>S3</td><td>Large response</td><td>Request a big JSON</td><td>GPU render, repaints, RAM while parsing</td></tr>
+        <tr><td>S4</td><td>Image preview</td><td>Open an image response</td><td>Image decode, GPU memory</td></tr>
+        <tr><td>S5</td><td>Long scroll</td><td>Scroll a long list</td><td>Jank on the list, lazy history reads</td></tr>
+        <tr><td>S6</td><td>DashBot</td><td>Chat and switch tab</td><td>Whether the tab state is kept</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- GPU -->
+  <section id="gpu">
+    <h2><span class="num">2</span> GPU rendering</h2>
+    <div class="grid">
+      <figure class="chart"><div id="chart-frames"></div>
+        <figcaption><b>Figure 1.</b> Frame time for S2 (small GET) and S2+S3 (with the big JSON). Green is
+        UI/build, blue is raster/GPU. The dashed line is the 16.7 ms budget for 60 FPS. Use the buttons to
+        switch between runs.</figcaption></figure>
+      <aside class="note">
+        <h3>What this tells us</h3>
+        <p>When the app is quiet the frames stay under budget, so the UI is fine at rest. The problem is
+        the response views: in S2 the raster time averaged <b>25.5 ms</b> and 34% of frames were janky;
+        with the big JSON (S3) raster averaged <b>38.5 ms</b> and <b>59%</b> of frames were over budget.</p>
+        <p>The worst frame had a build of <b>281 ms</b>, which is the moment the big JSON is parsed. Almost
+        all the cost is in the raster phase, not in building widgets, which fits the fact that the app has
+        no explicit <code>RepaintBoundary</code> widgets.</p>
+        <p class="src">Source: DevTools Performance export · 125 + 231 frames · 60 Hz.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- OVERDRAW -->
+  <section id="overdraw">
+    <h2><span class="num">3</span> Overdraw (repaints)</h2>
+    <div class="grid">
+      <figure class="chart"><div id="chart-repaints"></div>
+        <figcaption><b>Figure 2.</b> How many times each render object was repainted while recording the
+        three views. The colour overlay does not work under Impeller, so we measured repaints instead.</figcaption></figure>
+      <aside class="note">
+        <h3>What this tells us</h3>
+        <p>During this recording the average dropped to <b>17 FPS</b> and 89% of frames were janky. The
+        repaint counts show the cost is in a deep tree of layout boxes (<code>ConstrainedBox</code>,
+        <code>Padding</code>, <code>PositionedBox</code>, <code>Flex</code>), the semantics tree, and the
+        highlighted text (<code>RenderParagraph</code>).</p>
+        <p>There are only ~770 <code>RepaintBoundary</code> compared to thousands of repainted boxes, so
+        large parts of the screen repaint together. Adding a <code>RepaintBoundary</code> around the
+        response and preview area would help.</p>
+        <p class="src">Source: DevTools trace with paint profiling · same three views.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- MEMORY -->
+  <section id="memory">
+    <h2><span class="num">4</span> Memory</h2>
+    <div class="grid">
+      <figure class="chart"><div id="chart-heap"></div>
+        <figcaption><b>Figure 3.</b> Dart heap grouped by package, from a heap snapshot. Hover for exact
+        sizes.</figcaption></figure>
+      <aside class="note">
+        <h3>What this tells us</h3>
+        <p>No leak: the app's own objects are single instances (1 <code>CollectionStateNotifier</code>,
+        1 <code>HttpClientManager</code>, 1 <code>RequestModel</code>). All apidash classes together are
+        only ~1.2 KB.</p>
+        <p>About <b>92%</b> of the heap is the <b>Lottie</b> animation of the sending widget (14,473
+        objects). It is reused, not leaked, but it is the heaviest thing in memory and the same widget
+        that adds raster cost in Figure 1.</p>
+        <p class="src">Source: DevTools heap snapshot · class list export.</p>
+      </aside>
+    </div>
+    <div class="grid">
+      <figure class="chart"><div id="chart-heapclasses"></div>
+        <figcaption><b>Figure 4.</b> Top classes by retained size. Hover to see instance counts.</figcaption></figure>
+      <aside class="note">
+        <h3>Reading it</h3>
+        <p>The ten biggest classes are all from Lottie (<code>Keyframe</code>, <code>CubicCurveData</code>,
+        the keyframe animations). This is expected for a vector animation: it keeps the curves and
+        keyframes in memory while it plays.</p>
+        <p>Most of this sits in old space, which means the GC already promoted these long-lived objects.
+        RAM stayed flat around 400–500 MB across S1–S5, so the app does not accumulate memory as it runs.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- THREADING -->
+  <section id="threading">
+    <h2><span class="num">5</span> Threading</h2>
+    <div class="grid">
+      <figure class="chart"><div id="chart-cpu"></div>
+        <figcaption><b>Figure 5.</b> Where the CPU time went while loading the big JSON
+        (<span id="cpu-total"></span> samples). Hover for the exact percentage.</figcaption></figure>
+      <aside class="note">
+        <h3>What this tells us</h3>
+        <p>The app runs on a single main isolate. While loading the big response, the CPU spends its time
+        building lists and copying bytes (parsing the JSON), laying out text, and doing CRC32 for
+        decompression. All of this runs on the main isolate, right next to the frame drawing.</p>
+        <p>That is why the big response gives the 281 ms spike in Figure 1. The network wait itself does
+        not use CPU and does not block the UI, so the async design works; the bottleneck is the parsing
+        that stays on the main thread. Moving it to a <code>compute()</code>/isolate would help the most.</p>
+        <p class="src">Source: DevTools CPU Profiler export · 694 samples over 409 ms.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SUMMARY -->
+  <section id="summary">
+    <h2><span class="num">6</span> Summary</h2>
+    <div class="cols">
+      <div class="card good">
+        <h3>Good</h3>
+        <ul>
+          <li>The network wait never blocks the UI — all calls are async.</li>
+          <li>Memory is steady (400–500 MB), no leaks, thanks to <code>const</code>, immutable models and lazy Hive boxes.</li>
+          <li>Timers, controllers and stream subscriptions are all released in <code>dispose()</code>.</li>
+        </ul>
+      </div>
+      <div class="card bad">
+        <h3>Problems</h3>
+        <ul>
+          <li>Parsing a big response runs on the main isolate, causing jank on large bodies (S3).</li>
+          <li>No explicit <code>RepaintBoundary</code>, so deep trees and text repaint together.</li>
+          <li><code>leak_tracker</code> is not set up in the tests.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <p>Charts built from the raw DevTools exports (frame timings, heap snapshot and CPU samples). The
+    analysis, scenarios and conclusions are ours. Generative AI was used only to read the exported data
+    and render these interactive charts.</p>
+  </footer>
+
+</main>
+<script src="app.js"></script>
+</body>
+</html>

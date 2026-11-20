@@ -1,0 +1,1951 @@
+{
+ "framesS2": [
+  {
+   "n": 395,
+   "build": 46.47,
+   "raster": 45.51
+  },
+  {
+   "n": 396,
+   "build": 2.47,
+   "raster": 11.71
+  },
+  {
+   "n": 397,
+   "build": 0.81,
+   "raster": 21.49
+  },
+  {
+   "n": 398,
+   "build": 0.39,
+   "raster": 13.51
+  },
+  {
+   "n": 399,
+   "build": 1.56,
+   "raster": 2.55
+  },
+  {
+   "n": 400,
+   "build": 3.35,
+   "raster": 9.08
+  },
+  {
+   "n": 401,
+   "build": 4.42,
+   "raster": 82.38
+  },
+  {
+   "n": 402,
+   "build": 42.25,
+   "raster": 18.12
+  },
+  {
+   "n": 403,
+   "build": 1.32,
+   "raster": 57.22
+  },
+  {
+   "n": 404,
+   "build": 0.23,
+   "raster": 15.53
+  },
+  {
+   "n": 405,
+   "build": 0.44,
+   "raster": 94.47
+  },
+  {
+   "n": 406,
+   "build": 0.1,
+   "raster": 50.85
+  },
+  {
+   "n": 407,
+   "build": 0.19,
+   "raster": 153.43
+  },
+  {
+   "n": 408,
+   "build": 0.24,
+   "raster": 155.06
+  },
+  {
+   "n": 409,
+   "build": 1.64,
+   "raster": 3.01
+  },
+  {
+   "n": 410,
+   "build": 1.21,
+   "raster": 4.82
+  },
+  {
+   "n": 411,
+   "build": 0.97,
+   "raster": 7.26
+  },
+  {
+   "n": 412,
+   "build": 1.32,
+   "raster": 7.86
+  },
+  {
+   "n": 413,
+   "build": 1.17,
+   "raster": 6.86
+  },
+  {
+   "n": 414,
+   "build": 1.09,
+   "raster": 5.32
+  },
+  {
+   "n": 415,
+   "build": 0.94,
+   "raster": 3.58
+  },
+  {
+   "n": 416,
+   "build": 1.04,
+   "raster": 4.0
+  },
+  {
+   "n": 417,
+   "build": 0.59,
+   "raster": 5.61
+  },
+  {
+   "n": 418,
+   "build": 0.94,
+   "raster": 5.55
+  },
+  {
+   "n": 419,
+   "build": 1.14,
+   "raster": 6.09
+  },
+  {
+   "n": 420,
+   "build": 1.59,
+   "raster": 4.51
+  },
+  {
+   "n": 421,
+   "build": 1.41,
+   "raster": 7.81
+  },
+  {
+   "n": 422,
+   "build": 2.02,
+   "raster": 7.16
+  },
+  {
+   "n": 423,
+   "build": 0.78,
+   "raster": 3.69
+  },
+  {
+   "n": 424,
+   "build": 1.05,
+   "raster": 5.89
+  },
+  {
+   "n": 425,
+   "build": 0.88,
+   "raster": 5.91
+  },
+  {
+   "n": 426,
+   "build": 1.45,
+   "raster": 5.09
+  },
+  {
+   "n": 427,
+   "build": 0.96,
+   "raster": 4.79
+  },
+  {
+   "n": 428,
+   "build": 0.68,
+   "raster": 4.63
+  },
+  {
+   "n": 429,
+   "build": 0.87,
+   "raster": 2.74
+  },
+  {
+   "n": 430,
+   "build": 1.58,
+   "raster": 6.09
+  },
+  {
+   "n": 431,
+   "build": 2.47,
+   "raster": 3.88
+  },
+  {
+   "n": 432,
+   "build": 2.21,
+   "raster": 5.1
+  },
+  {
+   "n": 433,
+   "build": 2.06,
+   "raster": 5.66
+  },
+  {
+   "n": 434,
+   "build": 1.05,
+   "raster": 4.83
+  },
+  {
+   "n": 435,
+   "build": 0.97,
+   "raster": 4.74
+  },
+  {
+   "n": 436,
+   "build": 0.94,
+   "raster": 5.5
+  },
+  {
+   "n": 437,
+   "build": 0.57,
+   "raster": 5.18
+  },
+  {
+   "n": 438,
+   "build": 1.06,
+   "raster": 6.12
+  },
+  {
+   "n": 439,
+   "build": 0.77,
+   "raster": 4.29
+  },
+  {
+   "n": 440,
+   "build": 0.57,
+   "raster": 4.58
+  },
+  {
+   "n": 441,
+   "build": 2.06,
+   "raster": 6.08
+  },
+  {
+   "n": 442,
+   "build": 3.97,
+   "raster": 4.63
+  },
+  {
+   "n": 443,
+   "build": 0.83,
+   "raster": 5.24
+  },
+  {
+   "n": 444,
+   "build": 1.12,
+   "raster": 7.95
+  },
+  {
+   "n": 445,
+   "build": 1.09,
+   "raster": 4.69
+  },
+  {
+   "n": 446,
+   "build": 1.07,
+   "raster": 5.62
+  },
+  {
+   "n": 447,
+   "build": 1.15,
+   "raster": 5.88
+  },
+  {
+   "n": 448,
+   "build": 0.81,
+   "raster": 4.83
+  },
+  {
+   "n": 449,
+   "build": 0.57,
+   "raster": 2.75
+  },
+  {
+   "n": 450,
+   "build": 0.67,
+   "raster": 5.41
+  },
+  {
+   "n": 451,
+   "build": 1.31,
+   "raster": 4.3
+  },
+  {
+   "n": 452,
+   "build": 1.3,
+   "raster": 3.92
+  },
+  {
+   "n": 453,
+   "build": 2.72,
+   "raster": 7.43
+  },
+  {
+   "n": 454,
+   "build": 1.15,
+   "raster": 6.56
+  },
+  {
+   "n": 455,
+   "build": 0.96,
+   "raster": 4.35
+  },
+  {
+   "n": 456,
+   "build": 1.13,
+   "raster": 5.95
+  },
+  {
+   "n": 457,
+   "build": 0.69,
+   "raster": 7.0
+  },
+  {
+   "n": 458,
+   "build": 0.78,
+   "raster": 4.19
+  },
+  {
+   "n": 459,
+   "build": 4.42,
+   "raster": 5.86
+  },
+  {
+   "n": 460,
+   "build": 0.97,
+   "raster": 7.04
+  },
+  {
+   "n": 461,
+   "build": 1.45,
+   "raster": 6.3
+  },
+  {
+   "n": 462,
+   "build": 2.81,
+   "raster": 6.46
+  },
+  {
+   "n": 463,
+   "build": 0.54,
+   "raster": 3.25
+  },
+  {
+   "n": 464,
+   "build": 0.52,
+   "raster": 5.38
+  },
+  {
+   "n": 465,
+   "build": 1.21,
+   "raster": 8.46
+  },
+  {
+   "n": 466,
+   "build": 3.38,
+   "raster": 7.95
+  },
+  {
+   "n": 467,
+   "build": 1.02,
+   "raster": 5.87
+  },
+  {
+   "n": 468,
+   "build": 0.83,
+   "raster": 5.15
+  },
+  {
+   "n": 469,
+   "build": 0.97,
+   "raster": 3.15
+  },
+  {
+   "n": 470,
+   "build": 5.02,
+   "raster": 5.62
+  },
+  {
+   "n": 471,
+   "build": 1.78,
+   "raster": 7.47
+  },
+  {
+   "n": 472,
+   "build": 3.05,
+   "raster": 5.99
+  },
+  {
+   "n": 473,
+   "build": 3.87,
+   "raster": 18.73
+  },
+  {
+   "n": 474,
+   "build": 0.47,
+   "raster": 3.74
+  },
+  {
+   "n": 475,
+   "build": 1.66,
+   "raster": 9.52
+  },
+  {
+   "n": 476,
+   "build": 0.77,
+   "raster": 3.2
+  },
+  {
+   "n": 477,
+   "build": 1.29,
+   "raster": 5.75
+  },
+  {
+   "n": 478,
+   "build": 1.91,
+   "raster": 4.09
+  },
+  {
+   "n": 479,
+   "build": 1.82,
+   "raster": 8.1
+  },
+  {
+   "n": 480,
+   "build": 1.82,
+   "raster": 8.14
+  },
+  {
+   "n": 481,
+   "build": 0.99,
+   "raster": 7.23
+  },
+  {
+   "n": 482,
+   "build": 1.22,
+   "raster": 4.95
+  },
+  {
+   "n": 483,
+   "build": 0.54,
+   "raster": 3.66
+  },
+  {
+   "n": 484,
+   "build": 0.77,
+   "raster": 5.55
+  },
+  {
+   "n": 485,
+   "build": 0.67,
+   "raster": 2.21
+  },
+  {
+   "n": 486,
+   "build": 8.64,
+   "raster": 139.81
+  },
+  {
+   "n": 487,
+   "build": 2.56,
+   "raster": 133.14
+  },
+  {
+   "n": 489,
+   "build": 48.83,
+   "raster": 97.29
+  },
+  {
+   "n": 490,
+   "build": 51.18,
+   "raster": 211.57
+  },
+  {
+   "n": 491,
+   "build": 2.51,
+   "raster": 42.56
+  },
+  {
+   "n": 492,
+   "build": 43.08,
+   "raster": 43.11
+  },
+  {
+   "n": 493,
+   "build": 1.49,
+   "raster": 61.75
+  },
+  {
+   "n": 494,
+   "build": 0.36,
+   "raster": 72.1
+  },
+  {
+   "n": 496,
+   "build": 0.39,
+   "raster": 62.3
+  },
+  {
+   "n": 499,
+   "build": 11.03,
+   "raster": 53.01
+  },
+  {
+   "n": 502,
+   "build": 0.82,
+   "raster": 50.19
+  },
+  {
+   "n": 503,
+   "build": 3.69,
+   "raster": 42.22
+  },
+  {
+   "n": 504,
+   "build": 0.51,
+   "raster": 51.69
+  },
+  {
+   "n": 506,
+   "build": 0.85,
+   "raster": 56.01
+  },
+  {
+   "n": 508,
+   "build": 5.08,
+   "raster": 47.54
+  },
+  {
+   "n": 509,
+   "build": 0.35,
+   "raster": 53.11
+  },
+  {
+   "n": 513,
+   "build": 1.75,
+   "raster": 51.97
+  },
+  {
+   "n": 516,
+   "build": 4.84,
+   "raster": 54.73
+  },
+  {
+   "n": 518,
+   "build": 5.24,
+   "raster": 61.3
+  },
+  {
+   "n": 520,
+   "build": 8.42,
+   "raster": 62.65
+  },
+  {
+   "n": 523,
+   "build": 2.19,
+   "raster": 54.74
+  },
+  {
+   "n": 524,
+   "build": 0.98,
+   "raster": 35.71
+  },
+  {
+   "n": 525,
+   "build": 0.28,
+   "raster": 51.29
+  },
+  {
+   "n": 526,
+   "build": 1.17,
+   "raster": 71.84
+  },
+  {
+   "n": 527,
+   "build": 11.61,
+   "raster": 43.53
+  },
+  {
+   "n": 529,
+   "build": 12.46,
+   "raster": 65.47
+  },
+  {
+   "n": 530,
+   "build": 1.6,
+   "raster": 41.6
+  },
+  {
+   "n": 531,
+   "build": 119.78,
+   "raster": 18.38
+  },
+  {
+   "n": 532,
+   "build": 2.04,
+   "raster": 2.12
+  },
+  {
+   "n": 533,
+   "build": 2.14,
+   "raster": 42.0
+  },
+  {
+   "n": 534,
+   "build": 2.18,
+   "raster": 51.59
+  },
+  {
+   "n": 535,
+   "build": 9.47,
+   "raster": 48.4
+  },
+  {
+   "n": 536,
+   "build": 0.91,
+   "raster": 3.23
+  },
+  {
+   "n": 537,
+   "build": 0.82,
+   "raster": 48.43
+  }
+ ],
+ "framesS3": [
+  {
+   "n": 395,
+   "build": 46.47,
+   "raster": 45.51
+  },
+  {
+   "n": 396,
+   "build": 2.47,
+   "raster": 11.71
+  },
+  {
+   "n": 397,
+   "build": 0.81,
+   "raster": 21.49
+  },
+  {
+   "n": 398,
+   "build": 0.39,
+   "raster": 13.51
+  },
+  {
+   "n": 399,
+   "build": 1.56,
+   "raster": 2.55
+  },
+  {
+   "n": 400,
+   "build": 3.35,
+   "raster": 9.08
+  },
+  {
+   "n": 401,
+   "build": 4.42,
+   "raster": 82.38
+  },
+  {
+   "n": 402,
+   "build": 42.25,
+   "raster": 18.12
+  },
+  {
+   "n": 403,
+   "build": 1.32,
+   "raster": 57.22
+  },
+  {
+   "n": 404,
+   "build": 0.23,
+   "raster": 15.53
+  },
+  {
+   "n": 405,
+   "build": 0.44,
+   "raster": 94.47
+  },
+  {
+   "n": 406,
+   "build": 0.1,
+   "raster": 50.85
+  },
+  {
+   "n": 407,
+   "build": 0.19,
+   "raster": 153.43
+  },
+  {
+   "n": 408,
+   "build": 0.24,
+   "raster": 155.06
+  },
+  {
+   "n": 409,
+   "build": 1.64,
+   "raster": 3.01
+  },
+  {
+   "n": 410,
+   "build": 1.21,
+   "raster": 4.82
+  },
+  {
+   "n": 411,
+   "build": 0.97,
+   "raster": 7.26
+  },
+  {
+   "n": 412,
+   "build": 1.32,
+   "raster": 7.86
+  },
+  {
+   "n": 413,
+   "build": 1.17,
+   "raster": 6.86
+  },
+  {
+   "n": 414,
+   "build": 1.09,
+   "raster": 5.32
+  },
+  {
+   "n": 415,
+   "build": 0.94,
+   "raster": 3.58
+  },
+  {
+   "n": 416,
+   "build": 1.04,
+   "raster": 4.0
+  },
+  {
+   "n": 417,
+   "build": 0.59,
+   "raster": 5.61
+  },
+  {
+   "n": 418,
+   "build": 0.94,
+   "raster": 5.55
+  },
+  {
+   "n": 419,
+   "build": 1.14,
+   "raster": 6.09
+  },
+  {
+   "n": 420,
+   "build": 1.59,
+   "raster": 4.51
+  },
+  {
+   "n": 421,
+   "build": 1.41,
+   "raster": 7.81
+  },
+  {
+   "n": 422,
+   "build": 2.02,
+   "raster": 7.16
+  },
+  {
+   "n": 423,
+   "build": 0.78,
+   "raster": 3.69
+  },
+  {
+   "n": 424,
+   "build": 1.05,
+   "raster": 5.89
+  },
+  {
+   "n": 425,
+   "build": 0.88,
+   "raster": 5.91
+  },
+  {
+   "n": 426,
+   "build": 1.45,
+   "raster": 5.09
+  },
+  {
+   "n": 427,
+   "build": 0.96,
+   "raster": 4.79
+  },
+  {
+   "n": 428,
+   "build": 0.68,
+   "raster": 4.63
+  },
+  {
+   "n": 429,
+   "build": 0.87,
+   "raster": 2.74
+  },
+  {
+   "n": 430,
+   "build": 1.58,
+   "raster": 6.09
+  },
+  {
+   "n": 431,
+   "build": 2.47,
+   "raster": 3.88
+  },
+  {
+   "n": 432,
+   "build": 2.21,
+   "raster": 5.1
+  },
+  {
+   "n": 433,
+   "build": 2.06,
+   "raster": 5.66
+  },
+  {
+   "n": 434,
+   "build": 1.05,
+   "raster": 4.83
+  },
+  {
+   "n": 435,
+   "build": 0.97,
+   "raster": 4.74
+  },
+  {
+   "n": 436,
+   "build": 0.94,
+   "raster": 5.5
+  },
+  {
+   "n": 437,
+   "build": 0.57,
+   "raster": 5.18
+  },
+  {
+   "n": 438,
+   "build": 1.06,
+   "raster": 6.12
+  },
+  {
+   "n": 439,
+   "build": 0.77,
+   "raster": 4.29
+  },
+  {
+   "n": 440,
+   "build": 0.57,
+   "raster": 4.58
+  },
+  {
+   "n": 441,
+   "build": 2.06,
+   "raster": 6.08
+  },
+  {
+   "n": 442,
+   "build": 3.97,
+   "raster": 4.63
+  },
+  {
+   "n": 443,
+   "build": 0.83,
+   "raster": 5.24
+  },
+  {
+   "n": 444,
+   "build": 1.12,
+   "raster": 7.95
+  },
+  {
+   "n": 445,
+   "build": 1.09,
+   "raster": 4.69
+  },
+  {
+   "n": 446,
+   "build": 1.07,
+   "raster": 5.62
+  },
+  {
+   "n": 447,
+   "build": 1.15,
+   "raster": 5.88
+  },
+  {
+   "n": 448,
+   "build": 0.81,
+   "raster": 4.83
+  },
+  {
+   "n": 449,
+   "build": 0.57,
+   "raster": 2.75
+  },
+  {
+   "n": 450,
+   "build": 0.67,
+   "raster": 5.41
+  },
+  {
+   "n": 451,
+   "build": 1.31,
+   "raster": 4.3
+  },
+  {
+   "n": 452,
+   "build": 1.3,
+   "raster": 3.92
+  },
+  {
+   "n": 453,
+   "build": 2.72,
+   "raster": 7.43
+  },
+  {
+   "n": 454,
+   "build": 1.15,
+   "raster": 6.56
+  },
+  {
+   "n": 455,
+   "build": 0.96,
+   "raster": 4.35
+  },
+  {
+   "n": 456,
+   "build": 1.13,
+   "raster": 5.95
+  },
+  {
+   "n": 457,
+   "build": 0.69,
+   "raster": 7.0
+  },
+  {
+   "n": 458,
+   "build": 0.78,
+   "raster": 4.19
+  },
+  {
+   "n": 459,
+   "build": 4.42,
+   "raster": 5.86
+  },
+  {
+   "n": 460,
+   "build": 0.97,
+   "raster": 7.04
+  },
+  {
+   "n": 461,
+   "build": 1.45,
+   "raster": 6.3
+  },
+  {
+   "n": 462,
+   "build": 2.81,
+   "raster": 6.46
+  },
+  {
+   "n": 463,
+   "build": 0.54,
+   "raster": 3.25
+  },
+  {
+   "n": 464,
+   "build": 0.52,
+   "raster": 5.38
+  },
+  {
+   "n": 465,
+   "build": 1.21,
+   "raster": 8.46
+  },
+  {
+   "n": 466,
+   "build": 3.38,
+   "raster": 7.95
+  },
+  {
+   "n": 467,
+   "build": 1.02,
+   "raster": 5.87
+  },
+  {
+   "n": 468,
+   "build": 0.83,
+   "raster": 5.15
+  },
+  {
+   "n": 469,
+   "build": 0.97,
+   "raster": 3.15
+  },
+  {
+   "n": 470,
+   "build": 5.02,
+   "raster": 5.62
+  },
+  {
+   "n": 471,
+   "build": 1.78,
+   "raster": 7.47
+  },
+  {
+   "n": 472,
+   "build": 3.05,
+   "raster": 5.99
+  },
+  {
+   "n": 473,
+   "build": 3.87,
+   "raster": 18.73
+  },
+  {
+   "n": 474,
+   "build": 0.47,
+   "raster": 3.74
+  },
+  {
+   "n": 475,
+   "build": 1.66,
+   "raster": 9.52
+  },
+  {
+   "n": 476,
+   "build": 0.77,
+   "raster": 3.2
+  },
+  {
+   "n": 477,
+   "build": 1.29,
+   "raster": 5.75
+  },
+  {
+   "n": 478,
+   "build": 1.91,
+   "raster": 4.09
+  },
+  {
+   "n": 479,
+   "build": 1.82,
+   "raster": 8.1
+  },
+  {
+   "n": 480,
+   "build": 1.82,
+   "raster": 8.14
+  },
+  {
+   "n": 481,
+   "build": 0.99,
+   "raster": 7.23
+  },
+  {
+   "n": 482,
+   "build": 1.22,
+   "raster": 4.95
+  },
+  {
+   "n": 483,
+   "build": 0.54,
+   "raster": 3.66
+  },
+  {
+   "n": 484,
+   "build": 0.77,
+   "raster": 5.55
+  },
+  {
+   "n": 485,
+   "build": 0.67,
+   "raster": 2.21
+  },
+  {
+   "n": 486,
+   "build": 8.64,
+   "raster": 139.81
+  },
+  {
+   "n": 487,
+   "build": 2.56,
+   "raster": 133.14
+  },
+  {
+   "n": 489,
+   "build": 48.83,
+   "raster": 97.29
+  },
+  {
+   "n": 490,
+   "build": 51.18,
+   "raster": 211.57
+  },
+  {
+   "n": 491,
+   "build": 2.51,
+   "raster": 42.56
+  },
+  {
+   "n": 492,
+   "build": 43.08,
+   "raster": 43.11
+  },
+  {
+   "n": 493,
+   "build": 1.49,
+   "raster": 61.75
+  },
+  {
+   "n": 494,
+   "build": 0.36,
+   "raster": 72.1
+  },
+  {
+   "n": 496,
+   "build": 0.39,
+   "raster": 62.3
+  },
+  {
+   "n": 499,
+   "build": 11.03,
+   "raster": 53.01
+  },
+  {
+   "n": 502,
+   "build": 0.82,
+   "raster": 50.19
+  },
+  {
+   "n": 503,
+   "build": 3.69,
+   "raster": 42.22
+  },
+  {
+   "n": 504,
+   "build": 0.51,
+   "raster": 51.69
+  },
+  {
+   "n": 506,
+   "build": 0.85,
+   "raster": 56.01
+  },
+  {
+   "n": 508,
+   "build": 5.08,
+   "raster": 47.54
+  },
+  {
+   "n": 509,
+   "build": 0.35,
+   "raster": 53.11
+  },
+  {
+   "n": 513,
+   "build": 1.75,
+   "raster": 51.97
+  },
+  {
+   "n": 516,
+   "build": 4.84,
+   "raster": 54.73
+  },
+  {
+   "n": 518,
+   "build": 5.24,
+   "raster": 61.3
+  },
+  {
+   "n": 520,
+   "build": 8.42,
+   "raster": 62.65
+  },
+  {
+   "n": 523,
+   "build": 2.19,
+   "raster": 54.74
+  },
+  {
+   "n": 524,
+   "build": 0.98,
+   "raster": 35.71
+  },
+  {
+   "n": 525,
+   "build": 0.28,
+   "raster": 51.29
+  },
+  {
+   "n": 526,
+   "build": 1.17,
+   "raster": 71.84
+  },
+  {
+   "n": 527,
+   "build": 11.61,
+   "raster": 43.53
+  },
+  {
+   "n": 529,
+   "build": 12.46,
+   "raster": 65.47
+  },
+  {
+   "n": 530,
+   "build": 1.6,
+   "raster": 41.6
+  },
+  {
+   "n": 531,
+   "build": 119.78,
+   "raster": 18.38
+  },
+  {
+   "n": 532,
+   "build": 2.04,
+   "raster": 2.12
+  },
+  {
+   "n": 533,
+   "build": 2.14,
+   "raster": 42.0
+  },
+  {
+   "n": 534,
+   "build": 2.18,
+   "raster": 51.59
+  },
+  {
+   "n": 535,
+   "build": 9.47,
+   "raster": 48.4
+  },
+  {
+   "n": 536,
+   "build": 0.91,
+   "raster": 3.23
+  },
+  {
+   "n": 537,
+   "build": 0.82,
+   "raster": 48.43
+  },
+  {
+   "n": 538,
+   "build": 14.64,
+   "raster": 8.42
+  },
+  {
+   "n": 539,
+   "build": 0.76,
+   "raster": 79.31
+  },
+  {
+   "n": 540,
+   "build": 0.27,
+   "raster": 69.08
+  },
+  {
+   "n": 541,
+   "build": 0.37,
+   "raster": 56.15
+  },
+  {
+   "n": 543,
+   "build": 0.16,
+   "raster": 121.54
+  },
+  {
+   "n": 544,
+   "build": 0.3,
+   "raster": 18.79
+  },
+  {
+   "n": 545,
+   "build": 0.28,
+   "raster": 102.93
+  },
+  {
+   "n": 546,
+   "build": 0.73,
+   "raster": 114.15
+  },
+  {
+   "n": 547,
+   "build": 67.62,
+   "raster": 78.66
+  },
+  {
+   "n": 548,
+   "build": 0.17,
+   "raster": 56.1
+  },
+  {
+   "n": 551,
+   "build": 0.49,
+   "raster": 73.14
+  },
+  {
+   "n": 552,
+   "build": 60.69,
+   "raster": 103.62
+  },
+  {
+   "n": 553,
+   "build": 44.25,
+   "raster": 82.77
+  },
+  {
+   "n": 554,
+   "build": 6.49,
+   "raster": 49.08
+  },
+  {
+   "n": 555,
+   "build": 57.87,
+   "raster": 2.18
+  },
+  {
+   "n": 556,
+   "build": 38.78,
+   "raster": 4.63
+  },
+  {
+   "n": 557,
+   "build": 40.43,
+   "raster": 21.59
+  },
+  {
+   "n": 558,
+   "build": 7.22,
+   "raster": 38.74
+  },
+  {
+   "n": 559,
+   "build": 8.1,
+   "raster": 47.8
+  },
+  {
+   "n": 560,
+   "build": 10.4,
+   "raster": 54.15
+  },
+  {
+   "n": 561,
+   "build": 7.33,
+   "raster": 40.61
+  },
+  {
+   "n": 562,
+   "build": 23.3,
+   "raster": 22.33
+  },
+  {
+   "n": 563,
+   "build": 3.58,
+   "raster": 76.95
+  },
+  {
+   "n": 564,
+   "build": 22.27,
+   "raster": 49.65
+  },
+  {
+   "n": 565,
+   "build": 3.65,
+   "raster": 65.18
+  },
+  {
+   "n": 566,
+   "build": 7.98,
+   "raster": 12.94
+  },
+  {
+   "n": 567,
+   "build": 15.69,
+   "raster": 13.32
+  },
+  {
+   "n": 568,
+   "build": 0.79,
+   "raster": 65.79
+  },
+  {
+   "n": 569,
+   "build": 0.41,
+   "raster": 55.04
+  },
+  {
+   "n": 570,
+   "build": 0.41,
+   "raster": 50.77
+  },
+  {
+   "n": 571,
+   "build": 0.7,
+   "raster": 60.54
+  },
+  {
+   "n": 572,
+   "build": 1.33,
+   "raster": 63.28
+  },
+  {
+   "n": 573,
+   "build": 0.81,
+   "raster": 61.76
+  },
+  {
+   "n": 574,
+   "build": 0.36,
+   "raster": 67.74
+  },
+  {
+   "n": 575,
+   "build": 0.71,
+   "raster": 56.11
+  },
+  {
+   "n": 576,
+   "build": 0.58,
+   "raster": 3.55
+  },
+  {
+   "n": 577,
+   "build": 5.07,
+   "raster": 6.9
+  },
+  {
+   "n": 578,
+   "build": 0.18,
+   "raster": 85.19
+  },
+  {
+   "n": 579,
+   "build": 3.69,
+   "raster": 85.88
+  },
+  {
+   "n": 582,
+   "build": 0.65,
+   "raster": 73.25
+  },
+  {
+   "n": 586,
+   "build": 0.47,
+   "raster": 59.34
+  },
+  {
+   "n": 587,
+   "build": 0.76,
+   "raster": 2.91
+  },
+  {
+   "n": 588,
+   "build": 0.66,
+   "raster": 2.95
+  },
+  {
+   "n": 589,
+   "build": 0.44,
+   "raster": 2.5
+  },
+  {
+   "n": 590,
+   "build": 9.43,
+   "raster": 56.2
+  },
+  {
+   "n": 591,
+   "build": 1.84,
+   "raster": 191.59
+  },
+  {
+   "n": 592,
+   "build": 4.46,
+   "raster": 56.14
+  },
+  {
+   "n": 593,
+   "build": 14.43,
+   "raster": 141.21
+  },
+  {
+   "n": 594,
+   "build": 3.06,
+   "raster": 86.14
+  },
+  {
+   "n": 595,
+   "build": 2.18,
+   "raster": 36.19
+  },
+  {
+   "n": 601,
+   "build": 39.88,
+   "raster": 56.0
+  },
+  {
+   "n": 602,
+   "build": 1.67,
+   "raster": 56.15
+  },
+  {
+   "n": 604,
+   "build": 15.98,
+   "raster": 53.8
+  },
+  {
+   "n": 606,
+   "build": 0.62,
+   "raster": 70.83
+  },
+  {
+   "n": 608,
+   "build": 0.5,
+   "raster": 69.87
+  },
+  {
+   "n": 611,
+   "build": 0.78,
+   "raster": 24.39
+  },
+  {
+   "n": 612,
+   "build": 0.89,
+   "raster": 78.65
+  },
+  {
+   "n": 613,
+   "build": 0.84,
+   "raster": 37.74
+  },
+  {
+   "n": 617,
+   "build": 1.08,
+   "raster": 37.01
+  },
+  {
+   "n": 619,
+   "build": 1.17,
+   "raster": 74.99
+  },
+  {
+   "n": 622,
+   "build": 2.3,
+   "raster": 54.55
+  },
+  {
+   "n": 626,
+   "build": 1.15,
+   "raster": 36.82
+  },
+  {
+   "n": 629,
+   "build": 1.0,
+   "raster": 54.44
+  },
+  {
+   "n": 632,
+   "build": 2.63,
+   "raster": 77.72
+  },
+  {
+   "n": 634,
+   "build": 7.19,
+   "raster": 58.24
+  },
+  {
+   "n": 635,
+   "build": 1.67,
+   "raster": 1.95
+  },
+  {
+   "n": 636,
+   "build": 0.45,
+   "raster": 36.43
+  },
+  {
+   "n": 637,
+   "build": 1.48,
+   "raster": 132.08
+  },
+  {
+   "n": 639,
+   "build": 0.94,
+   "raster": 105.33
+  },
+  {
+   "n": 640,
+   "build": 0.8,
+   "raster": 107.2
+  },
+  {
+   "n": 645,
+   "build": 12.61,
+   "raster": 1.9
+  },
+  {
+   "n": 646,
+   "build": 0.34,
+   "raster": 37.89
+  },
+  {
+   "n": 647,
+   "build": 4.76,
+   "raster": 62.35
+  },
+  {
+   "n": 648,
+   "build": 0.76,
+   "raster": 1.74
+  },
+  {
+   "n": 649,
+   "build": 0.97,
+   "raster": 46.6
+  },
+  {
+   "n": 650,
+   "build": 0.56,
+   "raster": 80.83
+  },
+  {
+   "n": 651,
+   "build": 0.73,
+   "raster": 28.64
+  },
+  {
+   "n": 653,
+   "build": 0.71,
+   "raster": 52.16
+  },
+  {
+   "n": 654,
+   "build": 281.51,
+   "raster": 9.2
+  },
+  {
+   "n": 655,
+   "build": 1.23,
+   "raster": 6.12
+  },
+  {
+   "n": 656,
+   "build": 1.21,
+   "raster": 47.33
+  },
+  {
+   "n": 657,
+   "build": 1.26,
+   "raster": 47.76
+  },
+  {
+   "n": 658,
+   "build": 0.68,
+   "raster": 50.28
+  },
+  {
+   "n": 661,
+   "build": 2.59,
+   "raster": 56.94
+  },
+  {
+   "n": 663,
+   "build": 2.63,
+   "raster": 51.43
+  },
+  {
+   "n": 667,
+   "build": 2.02,
+   "raster": 52.14
+  },
+  {
+   "n": 668,
+   "build": 1.78,
+   "raster": 46.77
+  },
+  {
+   "n": 669,
+   "build": 0.94,
+   "raster": 52.66
+  },
+  {
+   "n": 672,
+   "build": 0.71,
+   "raster": 49.16
+  },
+  {
+   "n": 674,
+   "build": 1.29,
+   "raster": 55.34
+  },
+  {
+   "n": 675,
+   "build": 0.56,
+   "raster": 69.05
+  },
+  {
+   "n": 677,
+   "build": 92.94,
+   "raster": 2.6
+  },
+  {
+   "n": 678,
+   "build": 1.01,
+   "raster": 43.08
+  },
+  {
+   "n": 679,
+   "build": 1.5,
+   "raster": 42.3
+  },
+  {
+   "n": 680,
+   "build": 0.56,
+   "raster": 70.93
+  },
+  {
+   "n": 681,
+   "build": 0.57,
+   "raster": 37.35
+  },
+  {
+   "n": 682,
+   "build": 0.46,
+   "raster": 51.93
+  },
+  {
+   "n": 683,
+   "build": 0.61,
+   "raster": 54.93
+  },
+  {
+   "n": 685,
+   "build": 2.94,
+   "raster": 66.56
+  },
+  {
+   "n": 687,
+   "build": 1.29,
+   "raster": 48.65
+  },
+  {
+   "n": 689,
+   "build": 1.27,
+   "raster": 74.59
+  },
+  {
+   "n": 691,
+   "build": 0.93,
+   "raster": 35.45
+  },
+  {
+   "n": 694,
+   "build": 1.78,
+   "raster": 52.04
+  },
+  {
+   "n": 695,
+   "build": 1.26,
+   "raster": 46.61
+  },
+  {
+   "n": 696,
+   "build": 1.2,
+   "raster": 49.07
+  },
+  {
+   "n": 697,
+   "build": 0.42,
+   "raster": 52.35
+  }
+ ],
+ "heapByPackage": [
+  {
+   "pkg": "lottie",
+   "kb": 631.0
+  },
+  {
+   "pkg": "_fe_analyzer_shared",
+   "kb": 27.3
+  },
+  {
+   "pkg": "vector_math",
+   "kb": 14.6
+  },
+  {
+   "pkg": "riverpod",
+   "kb": 8.0
+  },
+  {
+   "pkg": "vector_graphics_compiler",
+   "kb": 2.2
+  },
+  {
+   "pkg": "flutter_riverpod",
+   "kb": 2.1
+  },
+  {
+   "pkg": "apidash",
+   "kb": 1.2
+  },
+  {
+   "pkg": "better_networking",
+   "kb": 0.0
+  }
+ ],
+ "heapTopClasses": [
+  {
+   "cls": "Keyframe",
+   "kb": 132.5,
+   "inst": 1696,
+   "lib": "lottie"
+  },
+  {
+   "cls": "CubicCurveData",
+   "kb": 108.3,
+   "inst": 3465,
+   "lib": "lottie"
+  },
+  {
+   "cls": "_SingleKeyframeWrapper",
+   "kb": 56.7,
+   "inst": 1815,
+   "lib": "lottie"
+  },
+  {
+   "cls": "IntegerKeyframeAnimation",
+   "kb": 42.9,
+   "inst": 687,
+   "lib": "lottie"
+  },
+  {
+   "cls": "TransformKeyframeAnimation",
+   "kb": 30.8,
+   "inst": 394,
+   "lib": "lottie"
+  },
+  {
+   "cls": "ShapeKeyframeAnimation",
+   "kb": 27.4,
+   "inst": 351,
+   "lib": "lottie"
+  },
+  {
+   "cls": "AnimatableTransform",
+   "kb": 21.7,
+   "inst": 347,
+   "lib": "lottie"
+  },
+  {
+   "cls": "ShapeData",
+   "kb": 21.2,
+   "inst": 679,
+   "lib": "lottie"
+  },
+  {
+   "cls": "DoubleKeyframeAnimation",
+   "kb": 19.0,
+   "inst": 304,
+   "lib": "lottie"
+  },
+  {
+   "cls": "ColorKeyframeAnimation",
+   "kb": 18.4,
+   "inst": 294,
+   "lib": "lottie"
+  }
+ ],
+ "cpuBuckets": [
+  {
+   "label": "List building (JSON parse)",
+   "pct": 23.9
+  },
+  {
+   "label": "Byte copying",
+   "pct": 16.7
+  },
+  {
+   "label": "Text layout/paint",
+   "pct": 11.1
+  },
+  {
+   "label": "Decompression (CRC32)",
+   "pct": 3.7
+  },
+  {
+   "label": "Disk write (Hive)",
+   "pct": 2.6
+  },
+  {
+   "label": "Isolate messaging",
+   "pct": 2.9
+  },
+  {
+   "label": "Other",
+   "pct": 39.0
+  }
+ ],
+ "cpuTotal": 694,
+ "repaints": [
+  {
+   "obj": "RenderSemanticsAnnotations",
+   "n": 10388
+  },
+  {
+   "obj": "RenderConstrainedBox",
+   "n": 7641
+  },
+  {
+   "obj": "RenderPadding",
+   "n": 4219
+  },
+  {
+   "obj": "RenderPositionedBox",
+   "n": 3944
+  },
+  {
+   "obj": "RenderMouseRegion",
+   "n": 3206
+  },
+  {
+   "obj": "RenderParagraph",
+   "n": 2940
+  },
+  {
+   "obj": "RenderFlex",
+   "n": 2506
+  },
+  {
+   "obj": "RenderCustomPaint",
+   "n": 2149
+  },
+  {
+   "obj": "RenderRepaintBoundary",
+   "n": 772
+  }
+ ]
+}
