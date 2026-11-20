@@ -33,3 +33,4 @@ npm start
 - `public/app.js` — draws the interactive charts from `public/data.json`.
 - `public/data.json` — the real profiling data extracted from the DevTools exports.
 - `server.js` — minimal Express static server (what Render runs).
+# apidash-profiling-web
