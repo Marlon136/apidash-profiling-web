@@ -1,13 +1,13 @@
-// Academic, restrained palette (no AI-style neon/gradients)
+// Palette taken from the reference banner (cyan / navy / warm accents)
 const C = {
-  ui:    '#3f6f52',   // muted green  (UI/build)
-  raster:'#2f5277',   // muted slate blue (raster/GPU)
-  accent:'#7a2518',   // oxford brick
-  warm:  '#b07a3c',   // ochre
-  grey:  '#8a867c',
-  ink:   '#1c1b19',
-  rule:  '#d6d1c4',
-  budget:'#a33b2a',
+  ui:    '#f5c518',   // warm yellow  (UI/build)
+  raster:'#05a2df',   // reference cyan (raster/GPU)
+  accent:'#1f4e79',   // navy
+  warm:  '#e8863c',   // orange
+  grey:  '#8aa0ae',
+  ink:   '#16293a',
+  rule:  '#d4e3ec',
+  budget:'#e8863c',   // orange budget line, stands out on cyan bars
 };
 const FONT = { family: 'Inter, system-ui, sans-serif', size: 12.5, color: C.ink };
 const BASE = {
@@ -69,7 +69,7 @@ fetch('data.json').then(r => r.json()).then(D => {
   Plotly.newPlot('chart-repaints', [{
     type:'bar', orientation:'h',
     x: rp.map(r=>r.n), y: rp.map(r=>r.obj),
-    marker:{ color: rp.map(r=> r.n>=3000 ? C.accent : (r.n>=1500 ? C.warm : C.raster)) },
+    marker:{ color: rp.map(r=> r.n>=3000 ? C.warm : (r.n>=1500 ? C.raster : C.accent)) },
     hovertemplate:'%{y}<br>%{x:,} repaints<extra></extra>'
   }], merge(BASE, { margin:{l:200,r:18,t:10,b:44}, xaxis:{title:'Repaints in the recording'}, yaxis:{} }), CFG);
 
@@ -78,7 +78,7 @@ fetch('data.json').then(r => r.json()).then(D => {
   Plotly.newPlot('chart-heap', [{
     type:'bar', orientation:'h',
     x: hp.map(r=>r.kb), y: hp.map(r=>r.pkg),
-    marker:{ color: hp.map(r=> r.pkg==='lottie' ? C.accent : C.raster) },
+    marker:{ color: hp.map(r=> r.pkg==='lottie' ? C.warm : C.raster) },
     hovertemplate:'%{y}<br>%{x:.1f} KB<extra></extra>'
   }], merge(BASE, { margin:{l:150,r:18,t:10,b:44}, xaxis:{title:'Retained Dart heap (KB)'}, yaxis:{} }), CFG);
 
@@ -94,9 +94,9 @@ fetch('data.json').then(r => r.json()).then(D => {
 
   /* ---- Figure 5: CPU buckets (horizontal) ---- */
   const cb = D.cpuBuckets.slice().sort((a,b)=>a.pct-b.pct);
-  const palette = {'List building (JSON parse)':C.accent,'Byte copying':C.warm,
+  const palette = {'List building (JSON parse)':C.warm,'Byte copying':C.orange||'#e8863c',
     'Text layout/paint':C.raster,'Decompression (CRC32)':C.accent,'Disk write (Hive)':C.ui,
-    'Isolate messaging':C.grey,'Other':'#c3beb0'};
+    'Isolate messaging':C.grey,'Other':'#b9cedb'};
   Plotly.newPlot('chart-cpu', [{
     type:'bar', orientation:'h',
     x: cb.map(r=>r.pct), y: cb.map(r=>r.label),
