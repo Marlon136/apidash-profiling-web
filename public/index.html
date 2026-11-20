@@ -72,9 +72,9 @@
     <p class="sectlead">How long each frame takes to draw. Over 16.7 ms means a dropped frame at 60 FPS.</p>
     <div class="grid">
       <figure class="chart"><div id="chart-frames"></div>
-        <figcaption><b>Figure 1.</b> Frame time for S2 (small GET) and S2+S3 (with the big JSON). Green is
-        UI/build, blue is raster/GPU. The dashed line is the 16.7 ms budget for 60 FPS. Use the buttons to
-        switch between runs.</figcaption></figure>
+        <figcaption><b>Figure 1.</b> S2 (small GET) vs S3 (large JSON) compared on the three metrics that
+        matter: average UI time, average raster/GPU time, and the share of janky frames. The dashed line
+        marks the 16.7 ms budget for 60 FPS. The large JSON pushes raster and jank well up.</figcaption></figure>
       <aside class="note">
         <h3>What this tells us</h3>
         <p>When the app is quiet the frames stay under budget, so the UI is fine at rest. The problem is

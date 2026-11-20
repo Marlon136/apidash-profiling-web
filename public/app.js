@@ -29,40 +29,27 @@ function merge(a, b){ return Object.assign({}, a, b, {
 fetch('data.json').then(r => r.json()).then(D => {
   document.getElementById('cpu-total').textContent = D.cpuTotal;
 
-  /* ---- Figure 1: frames, stacked UI + raster, toggle S2 / S3 ---- */
-  function frameTraces(rows){
-    const x = rows.map((_,i)=>i);
-    return [
-      { x, y: rows.map(r=>r.build), name:'UI / build', type:'bar', marker:{color:C.ui},
-        hovertemplate:'frame %{x}<br>UI %{y:.1f} ms<extra></extra>' },
-      { x, y: rows.map(r=>r.raster), name:'Raster / GPU', type:'bar', marker:{color:C.raster},
-        hovertemplate:'frame %{x}<br>Raster %{y:.1f} ms<extra></extra>' },
-    ];
-  }
+  /* ---- Figure 1: S2 vs S3 compared on the three metrics that matter ---- */
+  const fs = D.frameSummary;
   const budgetLine = { type:'line', xref:'paper', x0:0, x1:1, y0:16.7, y1:16.7,
-    line:{color:C.budget, width:1.3, dash:'dash'} };
-  const budgetAnno = { xref:'paper', x:0.01, y:16.7, yanchor:'bottom', text:'16.7 ms (60 FPS)',
-    showarrow:false, font:{size:11, color:C.budget}, bgcolor:'rgba(247,245,239,.8)' };
-  function drawFrames(which){
-    const rows = which==='S3' ? D.framesS3 : D.framesS2;
-    const lay = merge(BASE, { barmode:'stack', showlegend:true,
-      legend:{orientation:'h', y:1.12, x:0, font:{size:12}},
+    line:{color:C.budget, width:1.4, dash:'dash'} };
+  const budgetAnno = { xref:'paper', x:0.99, xanchor:'right', y:16.7, yanchor:'bottom',
+    text:'16.7 ms budget (60 FPS)', showarrow:false, font:{size:11, color:C.budget},
+    bgcolor:'rgba(243,248,251,.85)' };
+  Plotly.newPlot('chart-frames', [
+    { x: fs.metrics, y: fs.S2, name:'S2 · small GET', type:'bar', marker:{color:C.raster},
+      text: fs.S2.map((v,i)=> i===2 ? v+'%' : v+' ms'), textposition:'outside',
+      textfont:{size:12,color:C.ink},
+      hovertemplate:'%{x}<br>S2: %{y}<extra></extra>' },
+    { x: fs.metrics, y: fs.S3, name:'S3 · large JSON', type:'bar', marker:{color:C.warm},
+      text: fs.S3.map((v,i)=> i===2 ? v+'%' : v+' ms'), textposition:'outside',
+      textfont:{size:12,color:C.ink},
+      hovertemplate:'%{x}<br>S3: %{y}<extra></extra>' },
+  ], merge(BASE, { barmode:'group', showlegend:true,
+      legend:{orientation:'h', y:1.14, x:0, font:{size:12.5}},
       shapes:[budgetLine], annotations:[budgetAnno],
-      xaxis:{title:'Frame index'}, yaxis:{title:'Time (ms)', range:[0, 300]} });
-    Plotly.react('chart-frames', frameTraces(rows), lay, CFG);
-  }
-  drawFrames('S2');
-  // toggle buttons injected above the chart
-  const holder = document.getElementById('chart-frames');
-  const bar = document.createElement('div'); bar.className='toggle';
-  bar.innerHTML = '<button data-k="S2" class="on">S2 · small GET (125 frames)</button>'
-                + '<button data-k="S3">S2+S3 · large JSON (231 frames)</button>';
-  holder.parentNode.insertBefore(bar, holder);
-  bar.addEventListener('click', e=>{
-    const b = e.target.closest('button'); if(!b) return;
-    bar.querySelectorAll('button').forEach(x=>x.classList.remove('on'));
-    b.classList.add('on'); drawFrames(b.dataset.k);
-  });
+      margin:{l:52,r:18,t:30,b:40},
+      xaxis:{}, yaxis:{title:'ms  /  %', range:[0,70]} }), CFG);
 
   /* ---- Figure 2: repaints (horizontal bars) ---- */
   const rp = D.repaints.slice().reverse();
