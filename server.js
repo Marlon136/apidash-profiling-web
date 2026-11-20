@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, 'public'), {
   extensions: ['html'],
-  setHeaders(res) { res.setHeader('Cache-Control', 'public, max-age=300'); },
+  setHeaders(res) { res.setHeader('Cache-Control', 'no-cache'); },
 }));
 
 app.get('/healthz', (_req, res) => res.send('ok'));
